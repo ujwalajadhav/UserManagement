@@ -21,6 +21,8 @@ public class UserDao {
             userList.add(user);
             User user2 = new User(2, "test", "Teacher");
             userList.add(user2);
+            User user3 = new User(3, "Riya", "Student");
+            userList.add(user3);
             saveUserList(userList);		
          }
          else{
