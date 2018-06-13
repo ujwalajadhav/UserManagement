@@ -14,7 +14,7 @@ public class UserDao {
    public List<User> getAllUsers(){
       List<User> userList = null;
       try {
-         File file = new File("Users1.dat");
+         File file = new File("Users3.dat");
          if (!file.exists()) {
             User user = new User(1, "Mahesh", "Teacher");
             userList = new ArrayList<User>();
@@ -97,7 +97,7 @@ public class UserDao {
 
    private void saveUserList(List<User> userList){
       try {
-         File file = new File("Users1.dat");
+         File file = new File("Users3.dat");
          FileOutputStream fos;
 
          fos = new FileOutputStream(file);
